@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/searchBus.css" rel="stylesheet" >
+    <title>SearchBus</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navList">
+                <li id="backward">
+                    <a href="/">
+                        <img src="/image/backward.png" alt="뒤로가기">
+                    </a>
+                </li>
+                <li id="searchLi">
+                    <form id="busForm" action="/bus" method="post">
+                        <input id="number" type="text" name="number" placeholder="버스 검색">
+                    </form>
+                </li>
+            </ul>
+
+            <ul class="busOrStation">
+                <li id="bus">
+                    <a href="/html/searchBus.html">
+                        <img src="/image/bus.png" alt="버스"> 버스
+                    </a>
+                </li>
+                <li id="station">
+                    <a href="/html/searchStation.html">
+                        <img src="/image/station.png" alt="정류장"> 정류장
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="busPrint"></div>
+    <script src="/script/addSearchBus.js"></script>
+    
+</body>
+
+<script>
+    const form = document.getElementById('busForm');
+    const input = form.querySelector('input');
+
+    input.addEventListener('keydown', function(event) {
+      if (event.keyCode === 13) { // 엔터 키
+        event.preventDefault(); // 폼의 기본 제출 동작 방지
+        form.submit(); // 폼 전송
+      }
+    });
+</script>
+</html>

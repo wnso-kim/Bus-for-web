@@ -1,0 +1,112 @@
+header {
+    position: fixed;
+    height: 40px;
+    background: white;
+    align-items: center;
+    border-bottom: 1px solid #F6F6F6;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    }
+
+    nav{
+        height: 40px;
+        width: 100%;
+        font-size: 17px;
+        margin: 0 auto;
+    }
+
+    .navList{
+        height: 30px;
+        padding: 5px;
+        margin: 0 auto;
+        list-style: none;
+        border-bottom: 1.5px solid #F6F6F6;
+    }
+
+    .navList li{
+        list-style-type: none;
+        display: inline-block;  
+    }
+
+    .navList li a{
+        text-decoration-line: none;
+        color: black;
+        display: inline-block;
+    }
+    
+    #searchLi{
+        width: 90%;
+    }    
+
+    #navA{
+        color: gray;
+        background-color: #F6F6F6;
+        font-size: 15px;
+        width: 95%;
+        text-align: left;
+        padding: 6px;
+    }
+
+body {
+    padding-top: 40px;
+    background: #EEEEEE;
+    margin: 0;
+}
+
+#station>div{
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-div {
+    display: flex;
+    align-items: center;
+}
+
+.right-div {
+    display: flex;
+    align-items: center;
+}
+
+#stationName{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#station div div{
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 50px;
+    border-bottom: 1.5px solid #EEEEEE;
+}
+
+#stationName h3{
+    color: black;
+    margin: 0;
+}
+
+
+h3{
+    color: rgb(60, 143, 60);
+    margin: 0;
+}
+
+#len3{
+    color: blue; /* 글자 수가 3인 경우의 색상 */
+}

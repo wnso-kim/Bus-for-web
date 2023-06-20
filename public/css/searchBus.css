@@ -1,0 +1,130 @@
+header {
+    position: fixed;
+    height: 80px;
+    background: white;
+    align-items: center;
+    border-bottom: 1px solid #F6F6F6;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    }
+
+    nav{
+        height: 80px;
+        width: 100%;
+        font-size: 17px;
+        margin: 0 auto;
+    }
+
+    .navList{
+        height: 30px;
+        padding: 5px;
+        margin: 0 auto;
+        list-style: none;
+        border-bottom: 1.5px solid #F6F6F6;
+    }
+
+    .navList li{
+        list-style-type: none;
+        display: inline-block;  
+    }
+
+    .navList li a{
+        text-decoration-line: none;
+        color: black;
+        display: inline-block;
+    }
+
+
+    #backward{
+        width: 5%;
+        text-align: center;
+    }
+
+    #backward img{
+        height: 17px;
+    }
+
+    #searchLi{
+        width: 90%;
+    }    
+
+    #number{
+        color: gray;
+        background-color: #F6F6F6;
+        font-size: 15px;
+        width: 100%;
+        text-align: left;
+        padding: 6px;
+        border: none;
+    }
+
+    .busOrStation{
+        font-size: 15px;
+        height: 30px;
+        padding: 5px;
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .busOrStation li{
+        list-style-type: none;
+        flex: 0 0 auto;
+        margin: auto;
+    }
+
+    .busOrStation li a{
+        text-decoration-line: none;
+        color: orangered;
+        display: inline-block;
+    }
+
+    .busOrStation li a img{
+        height: 15px;
+    }
+
+    #bus::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 2px; /* 밑줄의 높이를 조절하려면 여기에 원하는 값으로 설정하세요 */
+        background-color: orangered; /* 밑줄의 색상을 원하는 색으로 설정하세요 */
+    }
+
+body {
+    padding-top: 81px;
+    background: #EEEEEE;
+    margin: 0;
+}
+
+
+
+div>div{
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-bottom: 1.5px solid #EEEEEE;
+    height: 60px;
+    display: block;
+}
+
+h3{
+    color: rgb(60, 143, 60);
+    margin: 0;
+}
+
+#len3{
+    color: blue; /* 글자 수가 3인 경우의 색상 */
+}
+
+div>p{
+    color: gray;
+    margin: 0;   
+}
+
